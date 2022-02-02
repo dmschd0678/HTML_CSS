@@ -43,7 +43,30 @@
 - **`<ol></ol>`** : 순서가 있는 목록 만들기
     - `<li></li>` : list
 - **`<p></p>`** : 문단 만들기
-- **`<div></div>`** : 레이아웃 나누기
+- **`<div></div>`** : 다른 HTML 요소들을 하나로 묶는 데 자주 사용되는 대표적인 블록(block) 요소
+- **`<span></span>`** : 텍스트의 특정 부분을 묶는 데 자주 사용되는 인라인(inline) 요소
+
+- **`<form></form>`** : 웹 페이지 입력 양식
+    - name : 폼의 이름
+    - action : 폼 데이터가 전송되는 백엔드 url
+    - method : 폼 전송 방식(GET/POST)
+    - textarea : 여러 줄의 문자열을 입력할 수 있는 태그
+    - `<input></input>` : 실제로 사용자가 양식을 입력하기 위한 태그<br>
+        - name : 데이터의 이름<br>
+        - value : 기본 값<br>
+        - type : 종류
+            - text : 문자
+            - password : 비밀번호
+            - button : 버튼
+            - submit : 양식 제출용 버튼
+            - reset : 양식 초기화용 버튼
+            - radio : 한 개만 선택할 수 있는 컴포넌트
+            - checkbox : 다수를 선택할 수 있는 컴포넌트
+            - file : 파일 업로드
+            - hidden : 사용자에게 보이지 않는 숨은 요소
+    - `<select></select>` : 목록
+        - `<option>?</option>` : 값
+    - `<iframe src = "웹 페이지 주소"></iframe>` : 웹페이지를 삽입할 수 있다
 ------
 ## CSS
 
