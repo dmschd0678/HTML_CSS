@@ -66,7 +66,11 @@
             - hidden : 사용자에게 보이지 않는 숨은 요소
     - `<select></select>` : 목록
         - `<option>?</option>` : 값
-    - `<iframe src = "웹 페이지 주소"></iframe>` : 웹페이지를 삽입할 수 있다
+    - `<iframe src = "웹 페이지 주소"></iframe>` : 웹페이지를 삽입할 수 있음
 ------
 ## CSS
 
+- **inline style sheet** : HTML 태그의 style 속성에 CSS 코드를 작성
+- **internal style sheet** : HTML 문서 안의 `<style>`태그에 CSS 코드를 작성
+- **linking style sheet** : 별도의 CSS코드를 만들고 HTML 문서와 연결(`<link>`)<br>
+#### inline > internal > linking 순으로 적용
