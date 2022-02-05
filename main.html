@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
         body{
             margin:0px;
         }
@@ -15,10 +16,10 @@
             width:100%;
             min-width: 1280px;
             height:5vh;
-            background-color:brown;
+            background-color:white;
 
         }
-        .nv{
+        .nav{
             position: relative;
             top:0px;
             margin: 0px auto;
@@ -31,9 +32,11 @@
             position: relative;
             top:0px;
             min-width: 1280px;
+            min-height: 90vh;
+            margin:0px auto;
             width:100%;
             height: 90vh;
-            background-color:gray;
+            background-color:#bebebe;
         }
         .footer{
             position: relative;
@@ -43,19 +46,180 @@
             height: 5vh;
             background-color:black;
         }
+        .header .nav .menu1{
+            position: relative;
+            float:left;
+            top:10px;
+            width : 100px;
+            cursor: pointer;
+        }
+        .header .nav .menu2{
+            position: relative;
+            float:left;
+            top:10px;
+            width : 100px;
+            cursor: pointer;
+        }
+        .header .nav .menu3{
+            position: relative;
+            float:left;
+            top:10px;
+            width : 100px;
+            cursor: pointer;
+            /*clear:both;*/
+        }
+        .header .nav .menu4{
+            position: relative;
+            float:left;
+            top:10px;
+            width : 100px;
+            cursor: pointer;
+        }
+        .header .nav .menu5{
+            position: relative;
+            float:left;
+            top:10px;
+            width : 100px;
+            cursor: pointer;
+        }
+        .main .section1{
+            position: relative;
+            top:0px;
+            width:1280px;
+            margin:0px auto;
+            height: 600px;
+            overflow: hidden;
+            padding-top: 50px;
+            border: 3px solid black;
+        }
+        .main.section1.img1{
+            position:absolute;
+            width : 128px;
+            height : 600;
+        }
+        .main .section2{
+            position: relative;
+            top:0px;
+            width:1280px;
+            margin:0px auto;
+            height: 500px;
+            padding-top: 50px;
+        }
+        .main .section2 .text1{
+            position:absolute;
+            top:80px;
+            left:20px;
+            font-size: 16pt;
+            font-family: 'Nanum Gothic', sans-serif;
+            font-weight: 700;
+            text-align: left;
+            width:500px;
+        }
+        .main .section2 .img2{
+            position: absolute;
+            border : 1px solid black;
+            width : 200px;
+            height: 200px;
+            top : 160px;
+            left: 20px;
+            border-radius: 50%;
+            background-image: url(img/image.gif);
+            background-repeat: no-repeat;
+            background-size:cover
+        }
+        .main .section2 .text2{
+            position:absolute;
+            font-family: 'Nanum Gothic', sans-serif;
+            top:160px;
+            left:400px;
+            width:600px;
+            height: 400px;
+        }
+
+        .main .section3{
+            position: relative;
+            top:0px;
+            width:1280px;
+            margin:0px auto;
+            height: 300px;
+            padding-top: 50px;
+        }
+        .main .section4{
+            position: relative;
+            top:0px;
+            width:1280px;
+            margin:0px auto;
+            height: 300px;
+            padding-top: 50px;
+            border:1px solid black;
+        }
     </style>
 </head>
 <body>
     <header class="header">
-        <nav class="nv">
-
+        <nav class="nav">
+            <div class ="menu1">회사이름</div>
+            <div class ="menu2">메인페이지</div>
+            <div class ="menu3">회사 연혁</div>
+            <div class ="menu4">예약 현황</div>
+            <div class ="menu5">Q&A</div>
         </nav>
     </header>
     <main class= "main">
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section class = "section1"><img src = "img/image.gif" class = "img1"></section>
+        <section class = "section2">
+            <div class = "text1">xxx레스토랑</div>
+            <div class = img2></div>
+            <div class = "text2">
+                <div style="font-size: 14pt; font-weight:700">올해의 주방장 : MR.KIM</div>
+                <div>안녕하세요! xxx레스토랑의 주방장입니다.</div>
+                <div>올해의 주방장에 선정되어 기쁩니다.<br>저희 레스토랑을 이용해 주셔서 감사합니다.</div>
+            </div>
+        </section>
+        <section class = "section3">
+            <form action="main2.html">
+                <div><label>이름 : </label><input type="text"></div>
+                <div><label>전화번호 : </label><input type="text"></div>
+                <div><label>인증번호 : </label><input type="text"></div>
+                <div><input type="submit" value="레스토랑 예약"></div>
+            </form>
+        </section>
+        <section class = "section4">
+            <table>
+                <tr>
+                    <td>12번째</td>
+                    <td>제목</td>
+                </tr>
+                <tr>
+                    <td>12번째</td>
+                    <td>제목</td>
+                </tr>
+                <tr>
+                    <td>12번째</td>
+                    <td>제목</td>
+                </tr>
+                <tr>
+                    <td>12번째</td>
+                    <td>제목</td>
+                </tr>
+            </table>
+            <div>
+                <div style = "float:left;">제목1</div>
+                <div>내용</div>
+            </div>
+            <div>
+                <div style = "float:left;">제목1</div>
+                <div>내용</div>
+            </div>
+            <div>
+                <div style = "float:left;">제목1</div>
+                <div>내용</div>
+            </div>
+            <div>
+                <div style = "float:left;">제목1</div>
+                <div>내용</div>
+            </div>
+        </section>
     </main>
     <footer class = "footer"></footer>
 </body>
