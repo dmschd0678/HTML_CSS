@@ -5,153 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="main.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-        body{
-            margin:0px;
+        .main .notice{
+            /*visibility: hidden;*/ /*공간 차지*/
+            /*display:none = 공간 차지 X*/
+            display: none;
         }
-        .header{
-            position: relative;
-            top:0px;
+        .main .notice .notice_background{
+            position: fixed;
+            top: 0px;
+            left:0px;
             width:100%;
-            min-width: 1280px;
-            height:5vh;
-            background-color:white;
-
+            height: 100vh;
+            background-color: black;
+            z-index: 0; /*우선순위 숫자 높을수록 높아짐*/
+            opacity: 0.2; /* 불투명도 */
         }
-        .nav{
-            position: relative;
-            top:0px;
-            margin: 0px auto;
-            min-width: 1280px;
-            width:1280px;
-            height:100%;
-            background-color: white;
-        }
-        .main{
-            position: relative;
-            top:0px;
-            min-width: 1280px;
-            min-height: 90vh;
-            margin:0px auto;
-            width:100%;
-            height: 90vh;
-            background-color:#bebebe;
-        }
-        .footer{
-            position: relative;
-            top:0px;
-            min-width: 1280px;
-            width:100%;
-            height: 5vh;
-            background-color:black;
-        }
-        .header .nav .menu1{
-            position: relative;
-            float:left;
-            top:10px;
-            width : 100px;
-            cursor: pointer;
-        }
-        .header .nav .menu2{
-            position: relative;
-            float:left;
-            top:10px;
-            width : 100px;
-            cursor: pointer;
-        }
-        .header .nav .menu3{
-            position: relative;
-            float:left;
-            top:10px;
-            width : 100px;
-            cursor: pointer;
-            /*clear:both;*/
-        }
-        .header .nav .menu4{
-            position: relative;
-            float:left;
-            top:10px;
-            width : 100px;
-            cursor: pointer;
-        }
-        .header .nav .menu5{
-            position: relative;
-            float:left;
-            top:10px;
-            width : 100px;
-            cursor: pointer;
-        }
-        .main .section1{
-            position: relative;
-            top:0px;
-            width:1280px;
-            margin:0px auto;
-            height: 600px;
-            overflow: hidden;
-            padding-top: 50px;
-            border: 3px solid black;
-        }
-        .main.section1.img1{
-            position:absolute;
-            width : 128px;
-            height : 600;
-        }
-        .main .section2{
-            position: relative;
-            top:0px;
-            width:1280px;
-            margin:0px auto;
-            height: 500px;
-            padding-top: 50px;
-        }
-        .main .section2 .text1{
-            position:absolute;
-            top:80px;
-            left:20px;
-            font-size: 16pt;
-            font-family: 'Nanum Gothic', sans-serif;
-            font-weight: 700;
-            text-align: left;
+        .main .notice .notice_border{
+            position:relative;
+            top:22vh;
+            margin: 0 auto;
             width:500px;
-        }
-        .main .section2 .img2{
-            position: absolute;
-            border : 1px solid black;
-            width : 200px;
-            height: 200px;
-            top : 160px;
-            left: 20px;
-            border-radius: 50%;
-            background-image: url(img/image.gif);
-            background-repeat: no-repeat;
-            background-size:cover
-        }
-        .main .section2 .text2{
-            position:absolute;
-            font-family: 'Nanum Gothic', sans-serif;
-            top:160px;
-            left:400px;
-            width:600px;
-            height: 400px;
-        }
+            height: 500px;
+            background-color: white;
+            z-index: 3;
 
-        .main .section3{
-            position: relative;
-            top:0px;
-            width:1280px;
-            margin:0px auto;
-            height: 300px;
-            padding-top: 50px;
-        }
-        .main .section4{
-            position: relative;
-            top:0px;
-            width:1280px;
-            margin:0px auto;
-            height: 300px;
-            padding-top: 50px;
-            border:1px solid black;
         }
     </style>
 </head>
@@ -159,13 +38,19 @@
     <header class="header">
         <nav class="nav">
             <div class ="menu1">회사이름</div>
-            <div class ="menu2">메인페이지</div>
+            <a href = "index2.html" style = "color:black"><div class ="menu2">메인페이지</div></a>
             <div class ="menu3">회사 연혁</div>
             <div class ="menu4">예약 현황</div>
             <div class ="menu5">Q&A</div>
         </nav>
     </header>
     <main class= "main">
+        <section class = "notice">
+            <div class = notice_background></div>
+            <div style="position: absolute; width :100%">
+                <div class = notice_border>공지사항</div>
+            </div>
+        </section>
         <section class = "section1"><img src = "img/image.gif" class = "img1"></section>
         <section class = "section2">
             <div class = "text1">xxx레스토랑</div>
