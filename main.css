@@ -52,6 +52,15 @@ body{
     width : 100px;
     cursor: pointer;
 }
+
+.header .nav .menu3:hover{ /*마우스를 올렸을 때*/
+    color:blue;
+    background-color: orange;
+}
+.header .nav .menu3:active{ /*클릭 했을 때*/
+    color:red;
+    background-color: green;
+}
 .header .nav .menu3{
     position: relative;
     float:left;
